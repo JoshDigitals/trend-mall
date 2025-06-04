@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Trend Mall</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="preloader">
+    <div class="preloader-content">
+      <h2>Trend Mall</h2>
+      <div class="loader"></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-container">
+      <nav class="main-nav">
+        <div class="nav-sections">
+          <a href="index.html" class="nav-item">Home</a>
+          <div class="nav-item dropdown active">
+            <span>Pages <i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-content">
+              <a href="about.html" class="active">About Us</a>
+              <a href="contact.html">Contact</a>
+              <a href="faq.html">FAQ</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Women <i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-content">
+              <a href="products.html?category=women-tops">Tops</a>
+              <a href="products.html?category=women-bottoms">Bottoms</a>
+              <a href="products.html?category=women-dresses">Dresses</a>
+              <a href="products.html?category=women-jackets">Jackets</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Men <i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-content">
+              <a href="products.html?category=men-shirts">Shirts</a>
+              <a href="products.html?category=men-pants">Pants</a>
+              <a href="products.html?category=men-jackets">Jackets</a>
+              <a href="products.html?category=men-accessories">Accessories</a>
+            </div>
+          </div>
+          <a href="blog.html" class="nav-item">Blog</a>
+        </div>
+        
+        <div class="logo">
+          <a href="index.html">Trend Mall</a>
+        </div>
+        
+        <div class="nav-actions">
+          <div class="search-container">
+            <div class="search-trigger">
+              <i class="fas fa-search"></i>
+              <span>Search</span>
+            </div>
+            <div class="search-popup">
+              <div class="search-popup-content">
+                <div class="search-form">
+                  <input type="text" id="search-input" placeholder="Search products...">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-results" id="search-results"></div>
+                <button class="close-search"><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+          <a href="account.html" class="account-link">
+            <i class="fas fa-user"></i>
+            <span>Account</span>
+          </a>
+          <div class="cart-container">
+            <a href="cart.html" class="cart-link">
+              <i class="fas fa-shopping-bag"></i>
+              <span>My Cart</span>
+              <span class="cart-count">0</span>
+            </a>
+            <div class="cart-dropdown">
+              <div class="cart-items" id="cart-items">
+                <p class="empty-cart">Your cart is empty</p>
+              </div>
+              <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <span class="subtotal-amount">$0.00</span>
+              </div>
+              <div class="cart-actions">
+                <a href="cart.html" class="btn-secondary">View Cart</a>
+                <a href="checkout.html" class="btn-primary">Checkout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1 class="reveal-text">About Us</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span class="current">About Us</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="about-intro">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal-image">
+          <img src="https://images.pexels.com/photos/5325878/pexels-photo-5325878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Our Store">
+        </div>
+        <div class="about-content reveal-text">
+          <h2>Our Story</h2>
+          <p>Founded in 2015, Trend Mall began as a small boutique in San Francisco with a vision to provide high-quality, stylish clothing that empowers individuals to express themselves through fashion.</p>
+          <p>Over the years, we've grown into a global brand while maintaining our commitment to quality craftsmanship, sustainable practices, and exceptional customer experience. Our team of passionate designers and fashion enthusiasts work tirelessly to bring you collections that blend timeless elegance with contemporary trends.</p>
+          <p>At Trend Mall, we believe that fashion is more than just clothing—it's a form of self-expression and confidence. That's why we're dedicated to creating pieces that make you look and feel your best, no matter the occasion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-values">
+    <div class="container">
+      <h2 class="section-title reveal-text">Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card reveal-card">
+          <div class="value-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Sustainability</h3>
+          <p>We're committed to reducing our environmental impact through responsible sourcing, ethical manufacturing, and eco-friendly packaging solutions.</p>
+        </div>
+        <div class="value-card reveal-card">
+          <div class="value-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Quality</h3>
+          <p>We never compromise on quality. Each piece is crafted with attention to detail, using premium materials that ensure durability and comfort.</p>
+        </div>
+        <div class="value-card reveal-card">
+          <div class="value-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Inclusivity</h3>
+          <p>We design for everybody. Our diverse range of styles, sizes, and options ensures that fashion is accessible and enjoyable for all.</p>
+        </div>
+        <div class="value-card reveal-card">
+          <div class="value-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Innovation</h3>
+          <p>We constantly push boundaries to bring you the latest trends, innovative designs, and technological advancements in fashion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-process">
+    <div class="container">
+      <h2 class="section-title reveal-text">Our Process</h2>
+      <div class="process-steps">
+        <div class="process-step reveal-card">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Design</h3>
+            <p>Our talented designers draw inspiration from global trends, art, and culture to create unique pieces that resonate with our customers.</p>
+          </div>
+        </div>
+        <div class="process-step reveal-card">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Material Selection</h3>
+            <p>We meticulously select high-quality, sustainable materials that meet our standards for comfort, durability, and environmental impact.</p>
+          </div>
+        </div>
+        <div class="process-step reveal-card">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Ethical Production</h3>
+            <p>Our garments are produced in facilities that ensure fair wages, safe working conditions, and responsible manufacturing practices.</p>
+          </div>
+        </div>
+        <div class="process-step reveal-card">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Quality Assurance</h3>
+            <p>Each piece undergoes rigorous quality checks to ensure it meets our high standards before reaching our customers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section" id="team">
+    <div class="container">
+      <h2 class="section-title reveal-text">Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member reveal-card">
+          <div class="member-image">
+            <img src="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sarah Johnson">
+          </div>
+          <div class="member-info">
+            <h3>Sarah Johnson</h3>
+            <p class="member-role">Founder & Creative Director</p>
+            <p class="member-bio">With over 15 years in the fashion industry, Sarah's vision and creativity are the driving forces behind Trend Mall's unique aesthetic.</p>
+            <div class="member-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-member reveal-card">
+          <div class="member-image">
+            <img src="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Michael Chen">
+          </div>
+          <div class="member-info">
+            <h3>Michael Chen</h3>
+            <p class="member-role">Head of Design</p>
+            <p class="member-bio">Michael combines his background in architecture with his passion for fashion to create structurally innovative yet wearable designs.</p>
+            <div class="member-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-member reveal-card">
+          <div class="member-image">
+            <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Emily Rodriguez">
+          </div>
+          <div class="member-info">
+            <h3>Emily Rodriguez</h3>
+            <p class="member-role">Sustainability Manager</p>
+            <p class="member-bio">Emily ensures our commitment to environmental responsibility is reflected in every aspect of our business operations.</p>
+            <div class="member-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-medium-m"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-member reveal-card">
+          <div class="member-image">
+            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="James Wilson">
+          </div>
+          <div class="member-info">
+            <h3>James Wilson</h3>
+            <p class="member-role">Head of Marketing</p>
+            <p class="member-bio">James brings Trend Mall's story to life through innovative marketing strategies and compelling brand narratives.</p>
+            <div class="member-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title reveal-text">What Our Customers Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+          <div class="testimonial-content">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Trend Mall has completely transformed my wardrobe. The quality of their clothes is exceptional, and their customer service is second to none. I've never felt more confident in what I wear."</p>
+            <div class="testimonial-author">
+              <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Jessica T.">
+              <div>
+                <h4>Jessica T.</h4>
+                <p>Loyal Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"As someone who cares deeply about sustainable fashion, I appreciate Trend Mall's commitment to ethical practices. Their clothes are not only stylish but also responsibly made. A win-win!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="David M.">
+              <div>
+                <h4>David M.</h4>
+                <p>Eco-conscious Shopper</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testimonial-text">"I've been shopping with Trend Mall for three years now, and they never disappoint. Their pieces are timeless yet modern, and the fit is always perfect. Worth every penny!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.pexels.com/photos/1855582/pexels-photo-1855582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sophia L.">
+              <div>
+                <h4>Sophia L.</h4>
+                <p>Fashion Blogger</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="testimonial-arrow prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonial-dots">
+          <button class="dot active" data-slide="0"></button>
+          <button class="dot" data-slide="1"></button>
+          <button class="dot" data-slide="2"></button>
+        </div>
+        <button class="testimonial-arrow next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands-section">
+    <div class="container">
+      <h2 class="section-title reveal-text">Our Partners</h2>
+      <div class="brands-slider">
+        <div class="brand-logo reveal-card">
+          <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/logo-6980089_1280.png" alt="Brand 1">
+        </div>
+        <div class="brand-logo reveal-card">
+          <img src="https://cdn.pixabay.com/photo/2022/08/09/16/19/logo-7375326_1280.png" alt="Brand 2">
+        </div>
+        <div class="brand-logo reveal-card">
+          <img src="https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png" alt="Brand 3">
+        </div>
+        <div class="brand-logo reveal-card">
+          <img src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png" alt="Brand 4">
+        </div>
+        <div class="brand-logo reveal-card">
+          <img src="https://cdn.pixabay.com/photo/2021/07/22/11/01/google-6485372_1280.png" alt="Brand 5">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content reveal-text">
+        <h2>Join the Trend Mall Family</h2>
+        <p>Sign up for our newsletter to receive the latest updates, exclusive offers, and style inspiration.</p>
+        <form class="cta-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <a href="index.html">Trend Mall</a>
+          </div>
+          <p>Premium clothing store for modern fashion enthusiasts. Discover the latest trends and timeless classics.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Our Shop</h3>
+          <ul>
+            <li><a href="products.html?category=women">Women</a></li>
+            <li><a href="products.html?category=men">Men</a></li>
+            <li><a href="lookbook.html">Lookbook</a></li>
+            <li><a href="gift-cards.html">Gift Cards</a></li>
+            <li><a href="sale.html">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Help Center</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="shipping.html">Shipping & Returns</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="size-guide.html">Size Guide</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2025 Trend Mall. All Rights Reserved.</p>
+        </div>
+        <div class="payment-methods">
+          <img src="https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png" alt="Payment Methods">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

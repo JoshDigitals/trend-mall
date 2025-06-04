@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Trend Mall</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="preloader">
+    <div class="preloader-content">
+      <h2>Trend Mall</h2>
+      <div class="loader"></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-container">
+      <nav class="main-nav">
+        <div class="nav-sections">
+          <a href="index.html" class="nav-item">Home</a>
+          <div class="nav-item dropdown active">
+            <span>Pages <i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-content">
+              <a href="about.html">About Us</a>
+              <a href="contact.html" class="active">Contact</a>
+              <a href="faq.html">FAQ</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Women <i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-content">
+              <a href="products.html?category=women-tops">Tops</a>
+              <a href="products.html?category=women-bottoms">Bottoms</a>
+              <a href="products.html?category=women-dresses">Dresses</a>
+              <a href="products.html?category=women-jackets">Jackets</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Men <i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-content">
+              <a href="products.html?category=men-shirts">Shirts</a>
+              <a href="products.html?category=men-pants">Pants</a>
+              <a href="products.html?category=men-jackets">Jackets</a>
+              <a href="products.html?category=men-accessories">Accessories</a>
+            </div>
+          </div>
+          <a href="blog.html" class="nav-item">Blog</a>
+        </div>
+        
+        <div class="logo">
+          <a href="index.html">Trend Mall</a>
+        </div>
+        
+        <div class="nav-actions">
+          <div class="search-container">
+            <div class="search-trigger">
+              <i class="fas fa-search"></i>
+              <span>Search</span>
+            </div>
+            <div class="search-popup">
+              <div class="search-popup-content">
+                <div class="search-form">
+                  <input type="text" id="search-input" placeholder="Search products...">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-results" id="search-results"></div>
+                <button class="close-search"><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+          <a href="account.html" class="account-link">
+            <i class="fas fa-user"></i>
+            <span>Account</span>
+          </a>
+          <div class="cart-container">
+            <a href="cart.html" class="cart-link">
+              <i class="fas fa-shopping-bag"></i>
+              <span>My Cart</span>
+              <span class="cart-count">0</span>
+            </a>
+            <div class="cart-dropdown">
+              <div class="cart-items" id="cart-items">
+                <p class="empty-cart">Your cart is empty</p>
+              </div>
+              <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <span class="subtotal-amount">$0.00</span>
+              </div>
+              <div class="cart-actions">
+                <a href="cart.html" class="btn-secondary">View Cart</a>
+                <a href="checkout.html" class="btn-primary">Checkout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1 class="reveal-text">Contact Us</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span class="current">Contact Us</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="contact-info">
+    <div class="container">
+      <div class="info-cards">
+        <div class="info-card reveal-card">
+          <div class="info-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Visit Us</h3>
+          <p>123 Fashion Street</p>
+          <p>San Francisco, CA 94105</p>
+          <p>United States</p>
+        </div>
+        <div class="info-card reveal-card">
+          <div class="info-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3>Call Us</h3>
+          <p>Customer Support:</p>
+          <p><a href="tel:+18005551234">+1 800 555 1234</a></p>
+          <p>Mon-Fri: 9am - 6pm EST</p>
+        </div>
+        <div class="info-card reveal-card">
+          <div class="info-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email Us</h3>
+          <p>Customer Support:</p>
+          <p><a href="mailto:support@Trend Mall.com">support@Trend Mall.com</a></p>
+          <p>Business Inquiries: <a href="mailto:info@Trend Mall.com">info@Trend Mall.com</a></p>
+        </div>
+        <div class="info-card reveal-card">
+          <div class="info-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Store Hours</h3>
+          <p>Monday - Saturday: 10am - 8pm</p>
+          <p>Sunday: 11am - 6pm</p>
+          <p>Holiday hours may vary</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-container reveal-card">
+          <h2>Get In Touch</h2>
+          <p>Have questions, feedback, or need assistance? Fill out the form below, and we'll get back to you as soon as possible.</p>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn-primary">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-map reveal-image">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0779217922836!2d-122.40145208469137!3d37.78565997975722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807ded297e89%3A0xcfd1b2f0938088f5!2sMarket%20St%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1620930800000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title reveal-text">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item reveal-card">
+          <div class="faq-question">
+            <h3>What are your shipping options?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>We offer several shipping options to meet your needs:</p>
+            <ul>
+              <li>Standard Shipping (3-5 business days): $5.99</li>
+              <li>Express Shipping (2-3 business days): $12.99</li>
+              <li>Next Day Delivery (order before 2pm): $19.99</li>
+              <li>Free standard shipping on orders over $75</li>
+            </ul>
+            <p>International shipping is available to select countries. Rates and delivery times vary by location.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-card">
+          <div class="faq-question">
+            <h3>What is your return policy?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>We want you to be completely satisfied with your purchase. If you're not, you can return unworn items in their original packaging within 30 days of delivery for a full refund or exchange.</p>
+            <p>Sale items can be returned within 14 days. Please note that some items marked as "Final Sale" cannot be returned or exchanged.</p>
+            <p>For more details, please visit our <a href="returns.html">Returns & Exchanges</a> page.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-card">
+          <div class="faq-question">
+            <h3>How do I track my order?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Once your order ships, you'll receive a confirmation email with a tracking number. You can also track your order by:</p>
+            <ol>
+              <li>Logging into your account and viewing your order history</li>
+              <li>Using the "Track Order" feature on our website</li>
+              <li>Contacting our customer service team</li>
+            </ol>
+            <p>Please allow 24 hours for tracking information to update after you receive the shipping confirmation.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-card">
+          <div class="faq-question">
+            <h3>Do you offer international shipping?</h3>
+            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we ship to most countries worldwide. International shipping rates and delivery times vary by location. Import duties and taxes may be charged once your package reaches your country and are the responsibility of the customer.</p>
+            <p>For a complete list of countries we ship to and estimated delivery times, please visit our <a href="shipping.html">Shipping Information</a> page.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-more">
+        <a href="faq.html" class="btn-secondary">View All FAQs</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2 class="reveal-text">Join Our Newsletter</h2>
+        <p class="reveal-text">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+        <form class="newsletter-form reveal-text">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <a href="index.html">Trend Mall</a>
+          </div>
+          <p>Premium clothing store for modern fashion enthusiasts. Discover the latest trends and timeless classics.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Our Shop</h3>
+          <ul>
+            <li><a href="products.html?category=women">Women</a></li>
+            <li><a href="products.html?category=men">Men</a></li>
+            <li><a href="lookbook.html">Lookbook</a></li>
+            <li><a href="gift-cards.html">Gift Cards</a></li>
+            <li><a href="sale.html">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Help Center</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="shipping.html">Shipping & Returns</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="size-guide.html">Size Guide</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2025 Trend Mall. All Rights Reserved.</p>
+        </div>
+        <div class="payment-methods">
+          <img src="https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png" alt="Payment Methods">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

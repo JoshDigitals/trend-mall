@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Salehub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="preloader">
+    <div class="preloader-content">
+      <h2>Salehub</h2>
+      <div class="loader"></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-container">
+      <nav class="main-nav">
+        <div class="nav-sections">
+          <a href="index.html" class="nav-item">Home</a>
+          <div class="nav-item dropdown">
+            <span>Pages <i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-content">
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+              <a href="faq.html">FAQ</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Women <i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-content">
+              <a href="products.html?category=women-tops">Tops</a>
+              <a href="products.html?category=women-bottoms">Bottoms</a>
+              <a href="products.html?category=women-dresses">Dresses</a>
+              <a href="products.html?category=women-jackets">Jackets</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <span>Men <i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-content">
+              <a href="products.html?category=men-shirts">Shirts</a>
+              <a href="products.html?category=men-pants">Pants</a>
+              <a href="products.html?category=men-jackets">Jackets</a>
+              <a href="products.html?category=men-accessories">Accessories</a>
+            </div>
+          </div>
+          <a href="blog.html" class="nav-item active">Blog</a>
+        </div>
+        
+        <div class="logo">
+          <a href="index.html">Salehub</a>
+        </div>
+        
+        <div class="nav-actions">
+          <div class="search-container">
+            <div class="search-trigger">
+              <i class="fas fa-search"></i>
+              <span>Search</span>
+            </div>
+            <div class="search-popup">
+              <div class="search-popup-content">
+                <div class="search-form">
+                  <input type="text" id="search-input" placeholder="Search products...">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-results" id="search-results"></div>
+                <button class="close-search"><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+          <a href="account.html" class="account-link">
+            <i class="fas fa-user"></i>
+            <span>Account</span>
+          </a>
+          <div class="cart-container">
+            <a href="cart.html" class="cart-link">
+              <i class="fas fa-shopping-bag"></i>
+              <span>My Cart</span>
+              <span class="cart-count">0</span>
+            </a>
+            <div class="cart-dropdown">
+              <div class="cart-items" id="cart-items">
+                <p class="empty-cart">Your cart is empty</p>
+              </div>
+              <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <span class="subtotal-amount">$0.00</span>
+              </div>
+              <div class="cart-actions">
+                <a href="cart.html" class="btn-secondary">View Cart</a>
+                <a href="checkout.html" class="btn-primary">Checkout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1 class="reveal-text">Our Blog</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span class="current">Blog</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="blog-layout">
+    <div class="container">
+      <div class="blog-main">
+        <div class="featured-post reveal-card">
+          <div class="featured-post-image">
+            <img src="https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sustainable Fashion">
+            <div class="post-date">
+              <span class="day">15</span>
+              <span class="month">Aug</span>
+            </div>
+          </div>
+          <div class="featured-post-content">
+            <div class="post-meta">
+              <span class="post-category">Fashion Trends</span>
+              <span class="post-author">By Sarah Johnson</span>
+            </div>
+            <h2 class="post-title"><a href="blog-post.html">The Future of Sustainable Fashion: Trends and Innovations</a></h2>
+            <p class="post-excerpt">Explore how sustainable practices are revolutionizing the fashion industry, from innovative materials to ethical manufacturing processes that are shaping the way we approach style.</p>
+            <a href="blog-post.html" class="read-more">Continue Reading <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="blog-posts-grid">
+          <div class="blog-card reveal-card">
+            <div class="blog-image">
+              <img src="https://images.pexels.com/photos/845434/pexels-photo-845434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fashion Trends">
+              <div class="blog-date">
+                <span class="day">12</span>
+                <span class="month">Aug</span>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-category">Fashion Trends</div>
+              <h3><a href="blog-post.html">Summer 2025 Fashion Trends You Need to Know About</a></h3>
+              <p>Discover the hottest trends for the upcoming summer season that will elevate your wardrobe.</p>
+              <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="blog-card reveal-card">
+            <div class="blog-image">
+              <img src="https://images.pexels.com/photos/5325899/pexels-photo-5325899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Style Guide">
+              <div class="blog-date">
+                <span class="day">05</span>
+                <span class="month">Aug</span>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-category">Style Guide</div>
+              <h3><a href="blog-post.html">How to Create a Sustainable Wardrobe That Lasts</a></h3>
+              <p>Learn how to build a timeless wardrobe with sustainable pieces that are both stylish and eco-friendly.</p>
+              <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="blog-card reveal-card">
+            <div class="blog-image">
+              <img src="https://images.pexels.com/photos/7679454/pexels-photo-7679454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fashion Tips">
+              <div class="blog-date">
+                <span class="day">28</span>
+                <span class="month">Jul</span>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-category">Fashion Tips</div>
+              <h3><a href="blog-post.html">10 Essential Accessories That Will Transform Any Outfit</a></h3>
+              <p>Discover the must-have accessories that can instantly elevate your everyday looks.</p>
+              <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="blog-card reveal-card">
+            <div class="blog-image">
+              <img src="https://images.pexels.com/photos/3761523/pexels-photo-3761523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Designer Spotlight">
+              <div class="blog-date">
+                <span class="day">19</span>
+                <span class="month">Jul</span>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-category">Designer Spotlight</div>
+              <h3><a href="blog-post.html">Emerging Designers That Are Changing the Fashion Industry</a></h3>
+              <p>Meet the innovative designers who are bringing fresh perspectives and sustainable practices to fashion.</p>
+              <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="blog-card reveal-card">
+            <div class="blog-image">
+              <img src="https://images.pexels.com/photos/2466756/pexels-photo-2466756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Style Guide">
+              <div class="blog-date">
+                <span class="day">12</span>
+                <span class="month">Jul</span>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-category">Style Guide</div>
+              <h3><a href="blog-post.html">How to Style Denim for Every Season</a></h3>
+              <p>Master the art of styling denim throughout the year with these expert tips and outfit ideas.</p>
+              <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="blog-card reveal-card">
+            <div class="blog-image">
+              <img src="https://images.pexels.com/photos/2741280/pexels-photo-2741280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fashion History">
+              <div class="blog-date">
+                <span class="day">03</span>
+                <span class="month">Jul</span>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-category">Fashion History</div>
+              <h3><a href="blog-post.html">The Evolution of Streetwear: From Subculture to High Fashion</a></h3>
+              <p>Trace the journey of streetwear from its underground roots to its current status as a dominant force in luxury fashion.</p>
+              <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <a href="#" class="page-link active">1</a>
+          <a href="#" class="page-link">2</a>
+          <a href="#" class="page-link">3</a>
+          <span class="page-dots">...</span>
+          <a href="#" class="page-link">8</a>
+          <a href="#" class="page-link next"><i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <div class="blog-sidebar">
+        <div class="sidebar-widget search-widget reveal-card">
+          <h3>Search</h3>
+          <form class="sidebar-search">
+            <input type="text" placeholder="Search articles...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <div class="sidebar-widget categories-widget reveal-card">
+          <h3>Categories</h3>
+          <ul class="category-list">
+            <li><a href="#">Fashion Trends <span>(12)</span></a></li>
+            <li><a href="#">Style Guides <span>(8)</span></a></li>
+            <li><a href="#">Fashion Tips <span>(15)</span></a></li>
+            <li><a href="#">Designer Spotlights <span>(6)</span></a></li>
+            <li><a href="#">Sustainability <span>(9)</span></a></li>
+            <li><a href="#">Fashion History <span>(7)</span></a></li>
+            <li><a href="#">Interviews <span>(4)</span></a></li>
+          </ul>
+        </div>
+        <div class="sidebar-widget recent-posts-widget reveal-card">
+          <h3>Recent Posts</h3>
+          <div class="recent-posts">
+            <div class="recent-post">
+              <div class="recent-post-image">
+                <img src="https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sustainable Fashion">
+              </div>
+              <div class="recent-post-info">
+                <h4><a href="blog-post.html">The Future of Sustainable Fashion</a></h4>
+                <p class="post-date">August 15, 2025</p>
+              </div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-image">
+                <img src="https://images.pexels.com/photos/845434/pexels-photo-845434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Summer Trends">
+              </div>
+              <div class="recent-post-info">
+                <h4><a href="blog-post.html">Summer 2025 Fashion Trends</a></h4>
+                <p class="post-date">August 12, 2025</p>
+              </div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-image">
+                <img src="https://images.pexels.com/photos/5325899/pexels-photo-5325899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sustainable Wardrobe">
+              </div>
+              <div class="recent-post-info">
+                <h4><a href="blog-post.html">Creating a Sustainable Wardrobe</a></h4>
+                <p class="post-date">August 5, 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-widget tags-widget reveal-card">
+          <h3>Tags</h3>
+          <div class="tag-cloud">
+            <a href="#" class="tag">Fashion</a>
+            <a href="#" class="tag">Style</a>
+            <a href="#" class="tag">Trends</a>
+            <a href="#" class="tag">Sustainable</a>
+            <a href="#" class="tag">Summer</a>
+            <a href="#" class="tag">Accessories</a>
+            <a href="#" class="tag">Denim</a>
+            <a href="#" class="tag">Designers</a>
+            <a href="#" class="tag">Outfits</a>
+            <a href="#" class="tag">Tips</a>
+            <a href="#" class="tag">Streetwear</a>
+            <a href="#" class="tag">Eco-friendly</a>
+          </div>
+        </div>
+        <div class="sidebar-widget instagram-widget reveal-card">
+          <h3>Instagram</h3>
+          <div class="instagram-grid">
+            <a href="#" class="instagram-item">
+              <img src="https://images.pexels.com/photos/2043590/pexels-photo-2043590.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Instagram Post">
+            </a>
+            <a href="#" class="instagram-item">
+              <img src="https://images.pexels.com/photos/1346187/pexels-photo-1346187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Instagram Post">
+            </a>
+            <a href="#" class="instagram-item">
+              <img src="https://images.pexels.com/photos/1921168/pexels-photo-1921168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Instagram Post">
+            </a>
+            <a href="#" class="instagram-item">
+              <img src="https://images.pexels.com/photos/2853909/pexels-photo-2853909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Instagram Post">
+            </a>
+            <a href="#" class="instagram-item">
+              <img src="https://images.pexels.com/photos/6311475/pexels-photo-6311475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Instagram Post">
+            </a>
+            <a href="#" class="instagram-item">
+              <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Instagram Post">
+            </a>
+          </div>
+          <a href="#" class="follow-instagram">Follow Us @salehub</a>
+        </div>
+        <div class="sidebar-widget newsletter-widget reveal-card">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter for the latest fashion updates and exclusive offers.</p>
+          <form class="sidebar-newsletter">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <a href="index.html">Salehub</a>
+          </div>
+          <p>Premium clothing store for modern fashion enthusiasts. Discover the latest trends and timeless classics.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Our Shop</h3>
+          <ul>
+            <li><a href="products.html?category=women">Women</a></li>
+            <li><a href="products.html?category=men">Men</a></li>
+            <li><a href="lookbook.html">Lookbook</a></li>
+            <li><a href="gift-cards.html">Gift Cards</a></li>
+            <li><a href="sale.html">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Help Center</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="shipping.html">Shipping & Returns</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="size-guide.html">Size Guide</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2025 Salehub. All Rights Reserved.</p>
+        </div>
+        <div class="payment-methods">
+          <img src="https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png" alt="Payment Methods">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
